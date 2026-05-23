@@ -35,7 +35,7 @@ export default function Home() {
             {/* Left: Content */}
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700">
-                <span>Supports</span>
+                <span>Built for</span>
                 <img src="/images/chatgpt-logo.png" alt="ChatGPT" className="h-5 w-auto object-contain" />
               </div>
 
@@ -142,9 +142,9 @@ export default function Home() {
           {/* Stats visualization */}
           <div className="mt-20 grid gap-8 sm:grid-cols-3">
             <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-[#00c76a]/5 to-transparent p-8 text-center">
-              <div className="mb-3 text-4xl font-black text-[#00c76a]">Unlimited</div>
+              <div className="mb-3 text-4xl font-black text-[#00c76a]">Local</div>
               <div className="text-sm font-medium text-gray-600">Saved Conversations</div>
-              <div className="mt-4 text-xs text-gray-500">No limits on storage</div>
+              <div className="mt-4 text-xs text-gray-500">Stored locally in your browser</div>
             </div>
             <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-blue-500/5 to-transparent p-8 text-center">
               <div className="mb-3 text-4xl font-black text-blue-600">10+</div>
@@ -307,7 +307,7 @@ export default function Home() {
             />
             <FeatureBlock
               title="Multi-File Support"
-              description="Save and organize PDFs, spreadsheets, documents, code files, and more alongside your conversations."
+              description="Save and organize conversations, PDFs, text files, code snippets, spreadsheets, and supported documents locally."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -414,8 +414,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
                 </svg>
               }
-              title="Unlimited Storage"
-              description="Save as many conversations and files as you want. No artificial limits."
+              title="Local Storage"
+              description="Save your conversations and supported files locally in your browser storage."
             />
           </div>
         </div>
@@ -555,27 +555,23 @@ export default function Home() {
           <div className="space-y-4">
             <FAQItem
               question="Where is my data stored?"
-              answer="All data is stored locally on your device using IndexedDB, a browser-native database. Nothing is uploaded to our servers or any cloud storage. Your conversations and files never leave your computer."
+              answer="Rapelle stores your saved conversations and context locally in your browser storage. Your data is not uploaded to external servers by default."
             />
             <FAQItem
               question="Does it work with all ChatGPT plans?"
-              answer="Yes, Rapelle works with ChatGPT Free, Plus, Team, and Enterprise. The extension operates at the browser level and is independent of your ChatGPT subscription tier."
+              answer="Rapelle is designed to work with standard ChatGPT web accounts, including Free and Plus plans. The extension operates at the browser level and may vary in managed workspaces or enterprise environments."
             />
             <FAQItem
               question="What file types can I save?"
-              answer="Currently supported: ChatGPT conversations, PDF, TXT, MD, JavaScript, CSV, XLSX, DOCX, and code snippets. We're continuously adding support for more formats based on user feedback."
+              answer="Rapelle supports ChatGPT conversations, code snippets, PDFs, images, markdown files, JSON, CSV, spreadsheets, and other text-based content."
             />
             <FAQItem
               question="How much does Rapelle cost?"
-              answer="Rapelle is available on the Chrome Web Store. Pricing details will be announced at launch. The extension is designed to be accessible while supporting ongoing development."
+              answer="Rapelle Pro is priced at $5.90/month. Additional pricing tiers and features may be introduced in the future."
             />
             <FAQItem
               question="Can I sync across multiple devices?"
-              answer="Currently, each installation stores data locally on that device. Cross-device sync is on our roadmap for future releases."
-            />
-            <FAQItem
-              question="How do I export my saved data?"
-              answer="You can export individual conversations or your entire database at any time. All exports are in standard formats (JSON, markdown) for portability."
+              answer="Cross-device sync is not available yet. Current saved data is tied to your local browser storage."
             />
           </div>
         </div>
@@ -606,6 +602,10 @@ export default function Home() {
             <div className="h-4 w-px bg-gray-300" />
             <a href="/terms-of-service" className="transition hover:text-gray-900">
               Terms of Service
+            </a>
+            <div className="h-4 w-px bg-gray-300" />
+            <a href="/changelog" className="transition hover:text-gray-900">
+              Changelog
             </a>
             <div className="h-4 w-px bg-gray-300" />
             <a href="/contact" className="transition hover:text-gray-900">
