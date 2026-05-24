@@ -69,24 +69,24 @@ export default function Home() {
               </div>
 
               {/* Compatibility badges */}
-              <div className="flex flex-wrap items-center gap-4 pt-4">
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <img src="/images/chrome-store-web.png" alt="Chrome" className="h-5 w-5" />
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-4 text-sm text-gray-600">
+                <div className="flex items-center gap-2">
+                  <img src="/images/chrome-store-web.png" alt="Chrome" className="h-4 w-4" />
                   <span>Chrome Extension</span>
                 </div>
-                <div className="h-4 w-px bg-gray-300" />
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <img src="/images/mac-compatible.png" alt="Mac" className="h-5 w-5" />
+                <span className="text-gray-300">|</span>
+                <div className="flex items-center gap-2">
+                  <img src="/images/mac-compatible.png" alt="Mac" className="h-4 w-4" />
                   <span>macOS</span>
                 </div>
-                <div className="h-4 w-px bg-gray-300" />
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <img src="/images/windows-compatible.png" alt="Windows" className="h-5 w-5" />
+                <span className="text-gray-300">|</span>
+                <div className="flex items-center gap-2">
+                  <img src="/images/windows-compatible.png" alt="Windows" className="h-4 w-4" />
                   <span>Windows</span>
                 </div>
-                <div className="h-4 w-px bg-gray-300" />
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <svg className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <span className="text-gray-300">|</span>
+                <div className="flex items-center gap-2">
+                  <svg className="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                   <span>100% Local — Nothing Uploaded</span>
