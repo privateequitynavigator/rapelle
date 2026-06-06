@@ -16,7 +16,7 @@ export default function TermsOfService() {
       {/* Content */}
       <div className="mx-auto max-w-4xl px-6 py-32">
         <h1 className="text-5xl font-black text-gray-900">Terms of Service</h1>
-        <p className="mt-4 text-sm text-gray-500">Last Updated: May 22, 2026</p>
+        <p className="mt-4 text-sm text-gray-500">Last Updated: June 6, 2026</p>
 
         <div className="mt-12 space-y-8 text-gray-700 leading-relaxed">
           <section>
@@ -36,10 +36,10 @@ export default function TermsOfService() {
               Rapelle is a browser extension that allows users to:
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
-              <li>Save ChatGPT conversations locally on their device</li>
+              <li>Save ChatGPT and Claude conversations locally on their device</li>
               <li>Store files and documents in local browser storage</li>
-              <li>Search and organize saved content using BM25 search algorithm</li>
-              <li>Restore conversation context in new ChatGPT sessions</li>
+              <li>Search and organize saved content</li>
+              <li>Restore conversation context in new ChatGPT or Claude sessions</li>
             </ul>
             <p className="mt-4">
               All data is stored locally on your device. We do not operate servers or cloud storage for user data.
@@ -72,7 +72,7 @@ export default function TermsOfService() {
               <li>All content you choose to save using the Extension</li>
               <li>Backing up important data (we provide no backup services)</li>
               <li>Ensuring your use of the Extension complies with all applicable laws</li>
-              <li>Your interactions with third-party services like ChatGPT</li>
+              <li>Your interactions with third-party services like ChatGPT and Claude</li>
               <li>Maintaining the confidentiality of any sensitive information you save</li>
             </ul>
           </section>
@@ -111,11 +111,11 @@ export default function TermsOfService() {
               <li>Browser crashes, conflicts, or compatibility issues</li>
               <li>Indirect, incidental, consequential, or punitive damages</li>
               <li>Loss of profits, revenue, or business opportunities</li>
-              <li>Damages resulting from third-party services (e.g., ChatGPT/OpenAI)</li>
+              <li>Damages resulting from third-party services (e.g., ChatGPT/OpenAI or Claude/Anthropic)</li>
             </ul>
             <p className="mt-4 font-semibold">
               Our total liability to you for all claims shall not exceed $10 USD or the amount you paid for the Extension 
-              (which is $0), whichever is greater.
+              in the prior month, whichever is greater.
             </p>
           </section>
 
@@ -136,14 +136,14 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Third-Party Services</h2>
             <p>
-              The Extension interacts with ChatGPT, a service operated by OpenAI. Your use of ChatGPT is subject to 
-              OpenAI's terms of service and privacy policy. We are not responsible for:
+              The Extension interacts with ChatGPT (operated by OpenAI) and Claude (operated by Anthropic). Your use of 
+              these services is subject to their respective terms of service and privacy policies. We are not responsible for:
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
-              <li>OpenAI's services, availability, or changes to ChatGPT</li>
-              <li>OpenAI's data handling, privacy practices, or terms</li>
-              <li>Any issues, damages, or disputes arising from your use of ChatGPT</li>
-              <li>Changes to ChatGPT that affect Extension functionality</li>
+              <li>OpenAI's or Anthropic's services, availability, or changes to their platforms</li>
+              <li>Either company's data handling, privacy practices, or terms</li>
+              <li>Any issues, damages, or disputes arising from your use of ChatGPT or Claude</li>
+              <li>Changes to ChatGPT or Claude that affect Extension functionality</li>
             </ul>
           </section>
 
@@ -204,13 +204,12 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Governing Law and Disputes</h2>
             <p>
-              These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without 
-              regard to its conflict of law principles.
+              These Terms shall be governed by and construed in accordance with applicable law, without 
+              regard to conflict of law principles.
             </p>
             <p className="mt-4">
-              Any disputes arising from these Terms or the Extension shall be resolved through binding arbitration in 
-              accordance with the rules of [Arbitration Organization], or in the courts of [Your Jurisdiction] if 
-              arbitration is not available.
+              Any disputes arising from these Terms or the Extension shall be resolved through good-faith negotiation 
+              between the parties before escalating to formal legal proceedings.
             </p>
           </section>
 

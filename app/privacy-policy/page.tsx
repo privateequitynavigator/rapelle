@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
       {/* Content */}
       <div className="mx-auto max-w-4xl px-6 py-32">
         <h1 className="text-5xl font-black text-gray-900">Privacy Policy</h1>
-        <p className="mt-4 text-sm text-gray-500">Last Updated: May 22, 2026</p>
+        <p className="mt-4 text-sm text-gray-500">Last Updated: June 6, 2026</p>
 
         <div className="mt-12 space-y-8 text-gray-700 leading-relaxed">
           <section>
@@ -38,14 +38,14 @@ export default function PrivacyPolicy() {
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
               <li>Personal information (name, email address, phone number, address)</li>
-              <li>ChatGPT conversation content</li>
+              <li>ChatGPT or Claude conversation content</li>
               <li>Uploaded files or documents</li>
               <li>Browsing history or website activity</li>
               <li>IP addresses or geolocation data</li>
               <li>Device information or browser fingerprints</li>
               <li>Usage analytics or telemetry</li>
               <li>Cookies or tracking technologies</li>
-              <li>Payment information (the Extension is free)</li>
+              <li>Payment information (handled entirely by ExtensionPay)</li>
             </ul>
           </section>
 
@@ -55,7 +55,7 @@ export default function PrivacyPolicy() {
               The Extension stores data locally on your device using IndexedDB, including:
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
-              <li>Saved ChatGPT conversations</li>
+              <li>Saved ChatGPT and Claude conversations</li>
               <li>Files you choose to save (PDFs, documents, spreadsheets, etc.)</li>
               <li>Search indices for content retrieval</li>
               <li>Extension settings and preferences</li>
@@ -73,8 +73,8 @@ export default function PrivacyPolicy() {
               including analytics providers, advertising networks, or cloud storage platforms.
             </p>
             <p className="mt-4">
-              The Extension interacts with ChatGPT (operated by OpenAI) only through your existing browser session. 
-              We do not create separate API connections or intercept communications with OpenAI.
+              The Extension interacts with ChatGPT (operated by OpenAI) and Claude (operated by Anthropic) only through your existing browser session. 
+              We do not create separate API connections or intercept communications with either service.
             </p>
           </section>
 

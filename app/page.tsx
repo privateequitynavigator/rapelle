@@ -35,8 +35,9 @@ export default function Home() {
             {/* Left: Content */}
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700">
-                <span>Built for</span>
+                <span>Available for</span>
                 <img src="/images/chatgpt-logo.png" alt="ChatGPT" className="h-5 w-auto object-contain" />
+                <img src="/images/claude-logo.png" alt="Claude" className="h-5 w-auto object-contain" />
               </div>
 
               <h1 className="text-6xl font-black leading-[1.05] tracking-tight text-gray-900 lg:text-7xl">
@@ -48,7 +49,7 @@ export default function Home() {
               </h1>
 
               <p className="max-w-xl text-xl leading-relaxed text-gray-600">
-                Rapelle saves your ChatGPT conversations and files locally on your device. When you need that context back, arm a saved chat and it automatically loads into your next conversation.
+                Rapelle saves your ChatGPT and Claude conversations and files locally on your device. When you need that context back, arm a saved chat and it automatically loads into your next conversation.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -69,23 +70,23 @@ export default function Home() {
               </div>
 
               {/* Compatibility badges */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-4 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-nowrap items-center gap-x-3 pt-4 text-sm text-gray-600">
+                <div className="flex items-center gap-2 whitespace-nowrap">
                   <img src="/images/chrome-store-web.png" alt="Chrome" className="h-4 w-4" />
                   <span>Chrome Extension</span>
                 </div>
                 <span className="text-gray-300">|</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 whitespace-nowrap">
                   <img src="/images/mac-compatible.png" alt="Mac" className="h-4 w-4" />
                   <span>macOS</span>
                 </div>
                 <span className="text-gray-300">|</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 whitespace-nowrap">
                   <img src="/images/windows-compatible.png" alt="Windows" className="h-4 w-4" />
                   <span>Windows</span>
                 </div>
                 <span className="text-gray-300">|</span>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 whitespace-nowrap">
                   <svg className="h-4 w-4 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
@@ -166,7 +167,7 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="text-5xl font-black text-gray-900">How to save and reload ChatGPT chats</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Three steps. No setup. Works on any ChatGPT conversation.
+              Three steps. No setup. Works on any ChatGPT or Claude conversation.
             </p>
           </div>
 
@@ -179,16 +180,16 @@ export default function Home() {
               <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm">
                 <img src="/images/how-it-works-save.png" alt="Save" className="h-10 w-10 object-contain" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">Save your ChatGPT chats</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Save your chats</h3>
               <p className="mt-3 text-gray-600">
-                Open any ChatGPT conversation and click Save in the Rapelle extension. It captures the full chat — messages, code, files, and attachments — and stores everything locally on your device.
+                Open any ChatGPT or Claude conversation and click Save in the Rapelle extension. It captures the full chat — messages, code, files, and attachments — and stores everything locally on your device.
               </p>
               <ul className="mt-6 space-y-3">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#00c76a]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>One click from any ChatGPT conversation</span>
+                  <span>One click from any ChatGPT or Claude conversation</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#00c76a]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -249,7 +250,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Reload context into a new chat</h3>
               <p className="mt-3 text-gray-600">
-                Arm a saved chat and Rapelle will automatically load that conversation's context into your next ChatGPT message. ChatGPT reads it and answers as if it already knows the history.
+                Arm a saved chat and Rapelle will automatically load that conversation's context into your next ChatGPT or Claude message. The AI reads it and answers as if it already knows the history.
               </p>
               <ul className="mt-6 space-y-3">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
@@ -262,7 +263,7 @@ export default function Home() {
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span>Injects once — ChatGPT remembers the rest of the thread</span>
+                  <span>Injects once — the AI remembers the rest of the thread</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -282,14 +283,14 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="text-5xl font-black text-gray-900">What Rapelle does</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Simple tools for saving, organizing, and reloading your ChatGPT conversations
+              Simple tools for saving, organizing, and reloading your AI conversations
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <FeatureBlock
               title="Save ChatGPT Conversations"
-              description="Save any ChatGPT chat with one click. The full conversation is stored locally in your browser — messages, code blocks, and attached files included."
+              description="Save any ChatGPT or Claude chat with one click. The full conversation is stored locally in your browser — messages, code blocks, and attached files included."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" />
@@ -298,7 +299,7 @@ export default function Home() {
             />
             <FeatureBlock
               title="Reload Previous Context"
-              description="Arm a saved chat and it automatically loads into your next ChatGPT conversation. No copy-pasting, no manual setup — it just works."
+              description="Arm a saved chat and it automatically loads into your next ChatGPT or Claude conversation. No copy-pasting, no manual setup — it just works."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
@@ -351,7 +352,7 @@ export default function Home() {
           <div className="mb-12 text-center">
             <h2 className="text-4xl font-black text-gray-900">Supported ChatGPT attachments and file types</h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-              Save these file types alongside your conversations and reload them into new ChatGPT chats
+              Save these file types alongside your conversations and reload them into new ChatGPT or Claude chats
             </p>
           </div>
 
@@ -376,7 +377,7 @@ export default function Home() {
           <div className="mb-16 text-center">
             <h2 className="text-5xl font-black text-gray-900">Private by design</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Your ChatGPT conversations are personal. Rapelle keeps them that way.
+              Your AI conversations are personal. Rapelle keeps them that way.
             </p>
           </div>
 
@@ -451,8 +452,12 @@ export default function Home() {
               answer="Yes. Rapelle works at the browser level on the ChatGPT website and is compatible with both Free and Plus accounts. It may not work correctly in managed workspaces or enterprise environments where browser extensions are restricted."
             />
             <FAQItem
+              question="Does Rapelle work with Claude?"
+              answer="Yes. Rapelle supports Claude in addition to ChatGPT. You can save conversations from Claude and reload them into new Claude or ChatGPT threads the same way."
+            />
+            <FAQItem
               question="Can I save PDFs, spreadsheets, and code files from ChatGPT?"
-              answer="Yes. When you upload a file to ChatGPT and save that conversation with Rapelle, the file is extracted and saved alongside the chat. Supported formats include PDF, XLSX, DOCX, TXT, MD, CSV, JSON, and most code file types."
+              answer="Yes. When you upload a file to ChatGPT or Claude and save that conversation with Rapelle, the file is extracted and saved alongside the chat. Supported formats include PDF, XLSX, DOCX, TXT, MD, CSV, JSON, and most code file types."
             />
             <FAQItem
               question="What happens when I reload a saved chat — does the whole thing get sent to ChatGPT?"
@@ -467,7 +472,7 @@ export default function Home() {
               answer="Not yet. Because everything is stored locally in your browser, saved chats are tied to the device and browser you saved them on. Cross-device sync is not available in this version."
             />
             <FAQItem
-              question="Does Rapelle slow down ChatGPT?"
+              question="Does Rapelle slow down ChatGPT or Claude?"
               answer="No. Rapelle only activates when you send a message and a chat is armed. When nothing is armed or the extension is set to inactive, it does nothing at all — there is no background processing or performance impact."
             />
           </div>

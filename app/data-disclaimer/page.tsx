@@ -16,7 +16,7 @@ export default function DataDisclaimer() {
       {/* Content */}
       <div className="mx-auto max-w-4xl px-6 py-32">
         <h1 className="text-5xl font-black text-gray-900">Data Disclaimer</h1>
-        <p className="mt-4 text-sm text-gray-500">Last Updated: May 22, 2026</p>
+        <p className="mt-4 text-sm text-gray-500">Last Updated: June 6, 2026</p>
 
         <div className="mt-12 space-y-8 text-gray-700 leading-relaxed">
           <section>
@@ -29,7 +29,7 @@ export default function DataDisclaimer() {
               This means:
             </p>
             <ul className="mt-2 ml-6 space-y-2 list-disc">
-              <li>Your saved ChatGPT conversations never leave your computer</li>
+              <li>Your saved ChatGPT and Claude conversations never leave your computer</li>
               <li>Your uploaded files remain on your local device only</li>
               <li>We cannot access, view, or retrieve any of your saved content</li>
               <li>Your data is as secure as your device and browser security</li>
@@ -42,7 +42,7 @@ export default function DataDisclaimer() {
               When you use Rapelle, the following data is stored in your browser's IndexedDB:
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
-              <li><strong>ChatGPT Conversations:</strong> Full conversation text, timestamps, and metadata</li>
+              <li><strong>AI Conversations:</strong> Full conversation text from ChatGPT and Claude, timestamps, and metadata</li>
               <li><strong>Uploaded Files:</strong> PDFs, documents, spreadsheets, and other files you manually save</li>
               <li><strong>Search Index:</strong> BM25 search index for fast retrieval</li>
               <li><strong>User Preferences:</strong> Extension settings and armed chat selections</li>
@@ -93,12 +93,12 @@ export default function DataDisclaimer() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Third-Party Services</h2>
             <p>
-              Rapelle interacts with ChatGPT (OpenAI) only through your existing browser session. We do not:
+              Rapelle interacts with ChatGPT (OpenAI) and Claude (Anthropic) only through your existing browser session. We do not:
             </p>
             <ul className="mt-4 ml-6 space-y-2 list-disc">
-              <li>Create our own API connections to OpenAI</li>
-              <li>Intercept or modify your ChatGPT communications</li>
-              <li>Send your ChatGPT data to any third-party services</li>
+              <li>Create our own API connections to OpenAI or Anthropic</li>
+              <li>Intercept or modify your ChatGPT or Claude communications</li>
+              <li>Send your conversation data to any third-party services</li>
               <li>Share data with analytics providers, advertisers, or other parties</li>
             </ul>
           </section>

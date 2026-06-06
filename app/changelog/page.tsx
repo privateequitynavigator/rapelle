@@ -3,6 +3,22 @@
 export default function Changelog() {
   const updates = [
     {
+      version: 'v1.1.0',
+      date: 'June 2026',
+      label: 'Update',
+      title: 'Claude support added',
+      description:
+        'Rapelle now works with Claude in addition to ChatGPT. You can save conversations from Claude, browse them in the Rapelle panel, and reload their context into new Claude or ChatGPT threads.',
+      items: [
+        'Save Claude conversations with one click — full messages, code blocks, and attached files',
+        'Arm a saved Claude chat to automatically inject its context into your next Claude or ChatGPT conversation',
+        'Context injection works the same way on Claude as it does on ChatGPT — silent, automatic, and fires on the first message',
+        'File attachments saved from Claude conversations are supported with the same file types as ChatGPT',
+        'Active / Inactive toggle now controls Rapelle across both ChatGPT and Claude simultaneously',
+        'Status pill on the Claude page shows whether Rapelle is injecting, on standby, or inactive',
+      ],
+    },
+    {
       version: 'v1.0.0',
       date: 'May 2026',
       label: 'Launch Version',
@@ -97,7 +113,7 @@ export default function Changelog() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900">Current Status</h2>
               <p className="mt-2 text-gray-600">
-                Rapelle v1.0 is live on the Chrome Web Store.
+                Rapelle v1.1 is live on the Chrome Web Store. Now supports ChatGPT and Claude.
               </p>
             </div>
             <div className="inline-flex w-fit rounded-full bg-[#00c76a] px-4 py-2 text-sm font-bold text-white">
