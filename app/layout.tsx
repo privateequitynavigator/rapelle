@@ -1,15 +1,49 @@
 import { Outfit } from 'next/font/google'
 import './globals.css'
 
-const outfit = Outfit({ 
+const outfit = Outfit({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800', '900'],
   variable: '--font-outfit',
 })
 
 export const metadata = {
-  title: 'Rapelle - Organize Your AI Conversations',
-  description: 'Save ChatGPT conversations and files locally. Search, organize, and restore context whenever you need it.',
+  metadataBase: new URL('https://rapelle.app'),
+
+  title: 'Rapelle - Save and Reload ChatGPT & Claude Chats',
+
+  description:
+    'Save ChatGPT and Claude chats, conversations, files, and AI context locally in your browser. Reload previous AI conversations anytime.',
+
+  keywords: [
+    'Rapelle',
+    'ChatGPT memory',
+    'Claude memory',
+    'save ChatGPT chats',
+    'save Claude chats',
+    'save ChatGPT conversations',
+    'save Claude conversations',
+    'ChatGPT extension',
+    'Claude extension',
+    'ChatGPT history',
+    'Claude history',
+    'AI memory tool',
+    'AI chat memory',
+    'AI conversation manager',
+    'ChatGPT context manager',
+    'Claude context manager',
+    'local ChatGPT storage',
+    'local Claude storage',
+    'ChatGPT recall',
+    'Claude recall',
+  ],
+
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+
+  manifest: '/site.webmanifest',
 }
 
 export default function RootLayout({
