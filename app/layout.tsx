@@ -1,4 +1,5 @@
 import { Outfit } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const outfit = Outfit({
@@ -53,6 +54,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-NJVMF7SSNR"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-NJVMF7SSNR');
+          `}
+        </Script>
+      </head>
       <body className={outfit.className}>{children}</body>
     </html>
   )
