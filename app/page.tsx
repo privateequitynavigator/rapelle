@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-gray-900">
       {/* Navigation */}
       <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
           <div className="flex items-center gap-3">
             <img src="/images/rapelle-logo-500x500.png" alt="Rapelle" className="h-9 w-9" />
             <span className="text-xl font-bold text-gray-900">Rapelle</span>
@@ -29,18 +29,18 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             {/* Left: Content */}
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700">
-                <span>Available for</span>
+                <span>AI context memory for</span>
                 <img src="/images/chatgpt-logo.png" alt="ChatGPT" className="h-5 w-auto object-contain" />
                 <img src="/images/claude-logo.png" alt="Claude" className="h-5 w-auto object-contain" />
               </div>
 
-              <h1 className="text-6xl font-black leading-[1.05] tracking-tight text-gray-900 lg:text-7xl">
+              <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
                 SAVE YOUR CHATGPT CHATS.
                 <br />
                 <span className="bg-gradient-to-r from-[#00c76a] to-[#00a858] bg-clip-text text-transparent">
@@ -48,11 +48,11 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="max-w-xl text-xl leading-relaxed text-gray-600">
-                Rapelle saves your ChatGPT and Claude conversations and files locally on your device. When you need that context back, arm a saved chat and it automatically loads into your next conversation.
+              <p className="max-w-xl text-base leading-relaxed text-gray-600 sm:text-xl">
+                Rapelle saves your ChatGPT and Claude conversations and files locally on your device. When you start a new AI session, arm a saved chat and Rapelle silently injects that context — so your AI picks up exactly where you left off.
               </p>
 
-              <div className="flex flex-col gap-4 sm:flex-row">
+              <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
                 <a
                   href="https://chrome.google.com/webstore"
                   target="_blank"
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
 
               {/* Compatibility badges */}
-              <div className="flex flex-nowrap items-center gap-x-3 pt-4 text-sm text-gray-600">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-4 text-sm text-gray-600">
                 <div className="flex items-center gap-2 whitespace-nowrap">
                   <img src="/images/chrome-store-web.png" alt="Chrome" className="h-4 w-4" />
                   <span>Chrome Extension</span>
@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
 
                 {/* Stat badges */}
-                <div className="absolute -right-6 top-12 rounded-xl border border-gray-200 bg-white p-4 shadow-lg">
+                <div className="absolute -right-4 top-8 hidden rounded-xl border border-gray-200 bg-white p-3 shadow-lg sm:block sm:-right-6 sm:top-12 sm:p-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#00c76a]/10">
                       <svg className="h-5 w-5 text-[#00c76a]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -123,7 +123,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="absolute -left-6 bottom-32 rounded-xl border border-gray-200 bg-white p-4 shadow-lg">
+                <div className="absolute -left-4 bottom-24 hidden rounded-xl border border-gray-200 bg-white p-3 shadow-lg sm:block sm:-left-6 sm:bottom-32 sm:p-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
                       <svg className="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
 
           {/* Stats row */}
-          <div className="mt-20 grid gap-8 sm:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:mt-20 sm:gap-8 sm:grid-cols-3">
             <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-[#00c76a]/5 to-transparent p-8 text-center">
               <div className="mb-3 text-4xl font-black text-[#00c76a]">Local</div>
               <div className="text-sm font-medium text-gray-600">Saved on Your Device</div>
@@ -162,12 +162,12 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section id="how" className="border-y border-gray-100 bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-5xl font-black text-gray-900">How to save and reload ChatGPT chats</h2>
+      <section id="how" className="border-y border-gray-100 bg-gray-50 py-12 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="mb-10 text-center sm:mb-16">
+            <h2 className="text-3xl font-black text-gray-900 sm:text-5xl">How to save and reload ChatGPT chats</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Three steps. No setup. Works on any ChatGPT or Claude conversation.
+              Three steps. No prompt engineering. Works on any ChatGPT or Claude conversation.
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Reload context into a new chat</h3>
               <p className="mt-3 text-gray-600">
-                Arm a saved chat and Rapelle will automatically load that conversation's context into your next ChatGPT or Claude message. The AI reads it and answers as if it already knows the history.
+                Arm a saved chat and Rapelle silently injects the conversation's full context into your next AI prompt. No copy-pasting, no prompt engineering — the model reads your prior work and continues seamlessly.
               </p>
               <ul className="mt-6 space-y-3">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
@@ -278,10 +278,10 @@ export default function Home() {
       </section>
 
       {/* Key Features */}
-      <section id="features" className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-5xl font-black text-gray-900">What Rapelle does</h2>
+      <section id="features" className="py-12 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <div className="mb-10 text-center sm:mb-16">
+            <h2 className="text-3xl font-black text-gray-900 sm:text-5xl">What Rapelle does</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
               Simple tools for saving, organizing, and reloading your AI conversations
             </p>
@@ -299,7 +299,7 @@ export default function Home() {
             />
             <FeatureBlock
               title="Reload Previous Context"
-              description="Arm a saved chat and it automatically loads into your next ChatGPT or Claude conversation. No copy-pasting, no manual setup — it just works."
+              description="Arm a saved chat and Rapelle auto-injects that context into your next AI session. Perfect for vibe coding workflows — continue a coding session, resume a research thread, or reload a project brief without re-explaining anything."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
@@ -326,7 +326,7 @@ export default function Home() {
             />
             <FeatureBlock
               title="Chat Summaries"
-              description="Not sure what's in a saved chat? Generate a quick summary to see what was discussed, what files are attached, and what was decided — before loading it."
+              description="Not sure what's in a saved chat? Generate a quick AI summary to see what was discussed, what files are attached, and what was decided — before injecting that context into a new session."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -335,7 +335,7 @@ export default function Home() {
             />
             <FeatureBlock
               title="Active / Inactive Toggle"
-              description="Turn Rapelle off when you don't need it. When inactive, it stops reading or intercepting anything. Flip it back on when you want to save or reload a chat."
+              description="Turn Rapelle off when you don't need it. When inactive, it does nothing — no interception, no injection. Flip it back on when you're ready to save context or resume a vibe coding or research session."
               icon={
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
@@ -347,16 +347,16 @@ export default function Home() {
       </section>
 
       {/* Supported File Types */}
-      <section className="border-y border-gray-100 bg-gray-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="border-y border-gray-100 bg-gray-50 py-12 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-4xl font-black text-gray-900">Supported ChatGPT attachments and file types</h2>
+            <h2 className="text-2xl font-black text-gray-900 sm:text-4xl">Supported ChatGPT attachments and file types</h2>
             <p className="mx-auto mt-4 max-w-2xl text-gray-600">
               Save these file types alongside your conversations and reload them into new ChatGPT or Claude chats
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
             <FileTypeCard icon="/images/what-rapelle-remembers-chats.png" title="Conversations" />
             <FileTypeCard icon="/images/what-rapelle-remembers-pdf.png" title="PDF" />
             <FileTypeCard icon="/images/what-rapelle-remembers-xls.png" title="Excel / XLSX" />
@@ -373,9 +373,9 @@ export default function Home() {
 
       {/* Privacy section */}
       <section className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="mb-16 text-center">
-            <h2 className="text-5xl font-black text-gray-900">Private by design</h2>
+            <h2 className="text-3xl font-black text-gray-900 sm:text-5xl">Private by design</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
               Your AI conversations are personal. Rapelle keeps them that way.
             </p>
@@ -434,11 +434,11 @@ export default function Home() {
 
       {/* FAQ */}
       <section id="faq" className="border-t border-gray-100 bg-gray-50 py-20">
-        <div className="mx-auto max-w-4xl px-6">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="mb-4 text-center text-sm font-bold uppercase tracking-wider text-blue-600">
             GOT QUESTIONS?
           </div>
-          <h2 className="mb-12 text-center text-5xl font-black text-gray-900">
+          <h2 className="mb-8 text-center text-3xl font-black text-gray-900 sm:mb-12 sm:text-5xl">
             Frequently asked questions
           </h2>
 
@@ -461,7 +461,7 @@ export default function Home() {
             />
             <FAQItem
               question="What happens when I reload a saved chat — does the whole thing get sent to ChatGPT?"
-              answer="Yes, for most conversations. When you arm a saved chat, Rapelle injects the full saved content into your first message. For very large saved chats (roughly over 80,000 characters), Rapelle loads the most relevant parts instead of everything. Most normal-length conversations are well within this limit."
+              answer="Yes, for most conversations. When you arm a saved chat, Rapelle injects the full saved content into your first message — so the AI immediately has your prior code, decisions, and context. For very large saved chats (roughly over 80,000 characters), Rapelle loads the most relevant parts using BM25 ranking. Most conversations are well within the limit."
             />
             <FAQItem
               question="How much does Rapelle cost?"
@@ -480,9 +480,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-20">
+      <section className="py-12 sm:py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="text-5xl font-black text-gray-900">Start saving your ChatGPT chats</h2>
+          <h2 className="text-3xl font-black text-gray-900 sm:text-5xl">Start saving your ChatGPT chats</h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-gray-600">
             Free to install. No account needed. Your chats stay on your device.
           </p>
@@ -501,14 +501,14 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-gray-200 bg-white py-12">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-center gap-6">
             <div className="flex items-center gap-2">
               <img src="/images/rapelle-logo-500x500.png" alt="Rapelle" className="h-10 w-10" />
               <span className="text-xl font-bold text-gray-900">Rapelle</span>
             </div>
             <p className="text-center text-sm text-gray-600">
-              Save, search, and reload your ChatGPT conversations locally.
+              AI context memory for ChatGPT and Claude. Save conversations, reload context, keep your workflow moving.
             </p>
           </div>
 

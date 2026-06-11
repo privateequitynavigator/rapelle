@@ -11,10 +11,10 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL('https://rapelle.app'),
 
-  title: 'Rapelle - Save and Reload ChatGPT & Claude Chats',
+  title: 'Rapelle - AI Context Memory for ChatGPT & Claude',
 
   description:
-    'Save ChatGPT and Claude chats, conversations, files, and AI context locally in your browser. Reload previous AI conversations anytime.',
+    'Rapelle is an AI context memory tool for ChatGPT and Claude. Save conversations and files locally. Reload prior context into new AI sessions — perfect for vibe coding, research, and long-running projects.',
 
   keywords: [
     'Rapelle',
@@ -37,6 +37,27 @@ export const metadata = {
     'local Claude storage',
     'ChatGPT recall',
     'Claude recall',
+    'vibe coding',
+    'vibe coding tool',
+    'vibe coding ChatGPT',
+    'vibe coding Claude',
+    'AI context injection',
+    'AI session memory',
+    'reload AI context',
+    'ChatGPT context reload',
+    'Claude context reload',
+    'AI workflow tool',
+    'AI coding assistant memory',
+    'save AI conversations',
+    'AI project memory',
+    'ChatGPT file memory',
+    'Claude file memory',
+    'AI chat saver',
+    'browser AI memory',
+    'local AI storage',
+    'AI context manager Chrome extension',
+    'continue ChatGPT conversation',
+    'continue Claude conversation',
   ],
 
   icons: {
