@@ -33,14 +33,14 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="grid items-center gap-16 lg:grid-cols-2">
             {/* Left: Content */}
-            <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700">
+            <div className="space-y-8 flex flex-col items-center sm:items-start">
+              <div className="inline-flex items-center gap-2 rounded-full bg-gray-50 px-4 py-2 text-sm font-medium text-gray-700 mx-auto sm:mx-0">
                 <span>AI context memory for</span>
                 <img src="/images/chatgpt-logo.png" alt="ChatGPT" className="h-5 w-auto object-contain" />
                 <img src="/images/claude-logo.png" alt="Claude" className="h-5 w-auto object-contain" />
               </div>
 
-              <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-gray-900 sm:text-5xl lg:text-7xl">
+              <h1 className="text-4xl font-black leading-[1.08] tracking-tight text-gray-900 sm:text-5xl lg:text-7xl text-center sm:text-left">
                 SAVE YOUR CHATGPT CHATS.
                 <br />
                 <span className="bg-gradient-to-r from-[#00c76a] to-[#00a858] bg-clip-text text-transparent">
@@ -48,7 +48,7 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="max-w-xl text-base leading-relaxed text-gray-600 sm:text-xl">
+              <p className="max-w-xl text-base leading-relaxed text-gray-600 sm:text-xl text-center sm:text-left">
                 Rapelle saves your ChatGPT and Claude conversations and files locally on your device. When you start a new AI session, arm a saved chat and Rapelle silently injects that context — so your AI picks up exactly where you left off.
               </p>
 
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
 
               {/* Compatibility badges */}
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-4 text-sm text-gray-600">
+              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 pt-4 text-sm text-gray-600 sm:justify-start">
                 <div className="flex items-center gap-2 whitespace-nowrap">
                   <img src="/images/chrome-store-web.png" alt="Chrome" className="h-4 w-4" />
                   <span>Chrome Extension</span>
@@ -173,18 +173,18 @@ export default function Home() {
 
           <div className="grid gap-12 lg:grid-cols-3">
             {/* Step 1 */}
-            <div className="relative">
+            <div className="relative text-center sm:text-left">
               <div className="mb-6 inline-block rounded-lg bg-[#00c76a] px-4 py-2 text-sm font-bold text-white">
                 STEP 1
               </div>
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm mx-auto sm:mx-0">
                 <img src="/images/how-it-works-save.png" alt="Save" className="h-10 w-10 object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Save your chats</h3>
               <p className="mt-3 text-gray-600">
                 Open any ChatGPT or Claude conversation and click Save in the Rapelle extension. It captures the full chat — messages, code, files, and attachments — and stores everything locally on your device.
               </p>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-3 text-left">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#00c76a]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -207,18 +207,18 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="relative">
+            <div className="relative text-center sm:text-left">
               <div className="mb-6 inline-block rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white">
                 STEP 2
               </div>
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm mx-auto sm:mx-0">
                 <img src="/images/how-it-works-remember.png" alt="Organize" className="h-10 w-10 object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Browse and find old chats</h3>
               <p className="mt-3 text-gray-600">
                 All your saved chats appear in the Rapelle panel. You can see what was discussed, how many files were attached, and when it was saved. Everything is searchable and stays on your device.
               </p>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-3 text-left">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -241,18 +241,18 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="relative">
+            <div className="relative text-center sm:text-left">
               <div className="mb-6 inline-block rounded-lg bg-purple-600 px-4 py-2 text-sm font-bold text-white">
                 STEP 3
               </div>
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm mx-auto sm:mx-0">
                 <img src="/images/how-it-works-restore.png" alt="Restore" className="h-10 w-10 object-contain" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Reload context into a new chat</h3>
               <p className="mt-3 text-gray-600">
                 Arm a saved chat and Rapelle silently injects the conversation's full context into your next AI prompt. No copy-pasting, no prompt engineering — the model reads your prior work and continues seamlessly.
               </p>
-              <ul className="mt-6 space-y-3">
+              <ul className="mt-6 space-y-3 text-left">
                 <li className="flex items-start gap-3 text-sm text-gray-600">
                   <svg className="mt-0.5 h-5 w-5 flex-shrink-0 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -374,7 +374,7 @@ export default function Home() {
       {/* Privacy section */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="mb-16 text-center">
+          <div className="mb-10 text-center sm:mb-16">
             <h2 className="text-3xl font-black text-gray-900 sm:text-5xl">Private by design</h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
               Your AI conversations are personal. Rapelle keeps them that way.
