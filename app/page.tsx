@@ -18,8 +18,9 @@ export default function Home() {
           </div>
 
           <a
-            href="https://chrome.google.com/webstore"
+            href="https://chromewebstore.google.com/detail/rapelle-save-recall-chatg/ejcobgajpinkpkdffdneilkkfcmbahbn"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg bg-[#00c76a] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#00b862]"
           >
             <img src="/images/chrome-store-web.png" alt="Chrome" className="h-4 w-4" />
@@ -54,8 +55,9 @@ export default function Home() {
 
               <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
                 <a
-                  href="https://chrome.google.com/webstore"
+                  href="https://chromewebstore.google.com/detail/rapelle-save-recall-chatg/ejcobgajpinkpkdffdneilkkfcmbahbn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-lg bg-[#00c76a] px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-green-500/20 transition hover:bg-[#00b862] hover:shadow-xl hover:shadow-green-500/30"
                 >
                   <img src="/images/chrome-store-web.png" alt="Chrome" className="h-5 w-5" />
@@ -488,8 +490,9 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="https://chrome.google.com/webstore"
+              href="https://chromewebstore.google.com/detail/rapelle-save-recall-chatg/ejcobgajpinkpkdffdneilkkfcmbahbn"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg bg-[#00c76a] px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-green-500/20 transition hover:bg-[#00b862]"
             >
               <img src="/images/chrome-store-web.png" alt="Chrome" className="h-5 w-5" />
